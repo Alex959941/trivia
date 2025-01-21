@@ -1,0 +1,137 @@
+/*
+font-family: "Outfit", serif;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+#title{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+.menu{
+    text-align: center;
+    margin: 5px;
+}
+#difficulty{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 20px;
+    grid-gap: 3px;
+    
+}
+
+#settingMenu{
+    max-width: 600px;
+    border: green 2px solid;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+#difDiv, #genDiv{
+    margin: 5px;
+    font-size: 20px;
+}
+#genre{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100%;
+}
+.Obutton{
+    font-size: 18px;
+    padding: 7px;
+    color: white;
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 3px;
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+.Obutton:hover{
+    cursor: pointer;
+    background-color:#01017e;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+#results{
+    margin: auto;
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+#resultScore{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#resultsRecap{
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+#trivia{
+    max-width: 800px;
+    border: blue 2px solid;
+    margin: auto;
+    padding: 30px
+}
+#askBox{
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-style: normal;
+    font-size: 23px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+#imageDiv{
+    text-align: center;
+}
+.imgR{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#optionMenu{
+    text-align: center;
+}
+.Sbutton{
+    font-size: 20px;
+    padding: 10px 20px 10px;
+    margin: 3px;
+    margin-bottom: 5px;
+    background-color: #1e90ff;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+.Sbutton:hover{
+    cursor: pointer;
+    background-color: #01017e;
+}
+#score{
+    border: dodgerblue 5px solid;
+    max-width: max-content;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    font-family: "Outfit", serif;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+    #difficulty{
+        grid-template-columns: 33% 33% 33%;
+    }
+    #genre{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+#fail{
+    text-align: center;
+    margin: auto;
+}

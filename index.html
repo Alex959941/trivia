@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="icons/48.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   
+    <title>Trivia Mania</title>
+    
+    <link rel="stylesheet" href="style.css">  
+    
+    <script src="myscript.js"></script>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  
+  <body>
+
+     <h1 id="title">Trivia Mania!</h1>
+     <div class="menu">
+     <button type="button" onclick="fetchQuestions()" id="startButton" class="Sbutton">Start</button>
+     <button type="button" onclick="showOptions(1)" id="settingsButton" class="Sbutton">Settings</button>
+     </div>
+     <div id="trivia">
+      <div id="askBox"></div>
+      <div id="imageDiv">
+      </div>
+      <div id="optionMenu">
+        <button id="option0" onclick="submit(option0)" class="Sbutton"></button>
+        <button id="option1" onclick="submit(option1)" class="Sbutton"></button>
+        <button id="option2" onclick="submit(option2)" class="Sbutton"></button>
+        <button id="option3" onclick="submit(option3)" class="Sbutton"></button>
+        <div id="score">0 Points</div>
+        <button onclick="returnHome()" class="Obutton">Return to Home</button>
+      </div>
+     </div>
+     <div id="results">
+      <div id="resultScore"></div>
+      <div id="resultsRecap"></div>
+      <button onclick="restart()" class="Sbutton">Restart</button>
+     </div>
+     <div id="settingMenu">
+      <div id="difDiv">Your Difficulty: Mixed</div>
+      <div id="difficulty">
+        <button onclick="setDifficulty('easy')" class="Obutton">Easy</button>
+        <button onclick="setDifficulty('medium')" class="Obutton">Medium</button>
+        <button onclick="setDifficulty('hard')" class="Obutton" >Hard</button>
+      </div>
+      <div id="genDiv">Your Category: Mixed</div>
+      <div id="genre">
+        <button onclick="setGenre(21)" class="Obutton">Sports</button>
+        <button onclick="setGenre(22)" class="Obutton">Geography</button>
+        <button onclick="setGenre(23)" class="Obutton">History</button>
+        <button onclick="setGenre(24)" class="Obutton">Politics</button>
+        <button onclick="setGenre(25)" class="Obutton">Art</button>
+        <button onclick="setGenre(26)" class="Obutton">Celebrities</button>
+        <button onclick="setGenre(27)" class="Obutton">Animals</button>
+        <button onclick="setGenre(9)" class="Obutton">General Knowledge</button>
+        <button onclick="setGenre(11)" class="Obutton">Film</button>
+        <button onclick="setGenre(28)" class="Obutton">Vehicles</button>
+        <button onclick="setGenre(14)" class="Obutton">Television</button>
+        <button onclick="setGenre(11)" class="Obutton">Books</button>
+        <button onclick="setGenre(12)" class="Obutton">Music</button>
+        <button onclick="setGenre(15)" class="Obutton">Video Games</button>
+        <button onclick="setGenre(17)" class="Obutton">Science & Nature</button>
+      </div>
+     </div>
+     <button onclick="restart()" class="Sbutton" id="fail">Restart Game</button>
+  </body>
+  
+</html>
