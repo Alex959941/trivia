@@ -1,0 +1,68 @@
+{
+    "theme_color":"#1e90ff",
+    "background_color":"#ffffff",
+    "icons":[
+        {
+            "purpose":"maskable",
+            "sizes":"512x512",
+            "src":"icons/icon512_maskable.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"512x512",
+            "src":"icons/icon512_rounded.png",
+            "type":"image/png"
+        },{
+            "purpose":"any",
+            "sizes":"192x192",
+            "src":"icons/192.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"144x144",
+            "src":"icons/144.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"96x96",
+            "src":"icons/96.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"72x72",
+            "src":"icons/72.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"48x48",
+            "src":"icons/48.png",
+            "type":"image/png"
+        }
+    ],
+    "orientation":"any",
+    "display":"standalone",
+    "dir":"auto",
+    "lang":"en-US",
+    "name":"Trivia Mania",
+    "start_url":"https://alex959941.github.io/trivia/",
+    "screenshots":[ 
+        {
+        "src": "screenshots/screenshot1.png",
+        "sizes": "720x1280",
+        "type": "image/png",
+        "purpose": "any"
+        },
+        {
+        "src": "screenshots/screenshot2.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide",
+        "purpose": "any"
+        }
+    ]
+}
