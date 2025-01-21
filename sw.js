@@ -1,28 +1,3 @@
-const version = 'v123';  // change this everytime you update the service worker
-                          // to force the browser to also update it.
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open('my-cache').then(function(cache) {
-      return cache.addAll([
-        'manifest.json',
-        'index.html',
-        'styles.css',
-        'script.js',
-        'icons/48.png',
-        'icons/72.png',
-        'icons/96.png',
-        'icons/144.png',
-        'icons/192.png',
-        'icons/512.png',
-        'icons/512_maskable.png',
-        'icons/512_rounded.png',
-        'sw.js'
-      ]);
-    })
-  );
-});
-
 // Define cache names
 const CACHE_NAME = 'my-app-cache-v1';
 const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v1';
@@ -30,19 +5,18 @@ const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v1';
 // Files to cache during install
 const STATIC_ASSETS = [
   'manifest.json',
-        'index.html',
-        'styles.css',
-        'script.js',
-        'icons/48.png',
-        'icons/72.png',
-        'icons/96.png',
-        'icons/144.png',
-        'icons/192.png',
-        'icons/512.png',
-        'icons/512_maskable.png',
-        'icons/512_rounded.png',
-        'sw.js'
-  
+  'index.html',
+  'style.css',
+  'myscript.js',
+  'icons/48.png',
+  'icons/72.png',
+  'icons/96.png',
+  'icons/144.png',
+  'icons/192.png',
+  'icons/512.png',
+  'icons/512_maskable.png',
+  'icons/512_rounded.png',
+  'sw.js'
 ];
 
 // Install event: Cache static assets
