@@ -180,7 +180,7 @@ function setGenre(category){
         default:
             word = "Not Found";
     }
-    genDiv.innerHTML = "Your Category: " + word;
+    genDiv.innerHTML = "Your Category: <strong>" + word + "</strong>";
 }
 
 function showResults(){
