@@ -133,49 +133,49 @@ function setGenre(category){
 
     switch(category){
         case 21:
-            word = "<strong>Sports</strong>";
+            word = "Sports";
             break;
         case 22:
-            word = "<strong>Geography</strong>";
+            word = "Geography";
             break;
         case 23:
-            word = "<strong>History</strong>";
+            word = "History";
             break;
         case 24:
-            word = "<strong>Politics<strong>";
+            word = "Politics";
             break;
         case 25:
-            word = "<strong>Art</strong>";
+            word = "Art";
             break;
         case 26:
-            word = "<strong>Celebrities</strong>";
+            word = "Celebrities";
             break;
         case 27:
-            word = "<strong>Animals</strong>";
+            word = "Animals";
             break;
         case 9:
-            word = "<strong>General Knowledge</strong>";
+            word = "General Knowledge";
             break;
         case 11:
-            word = "<strong>Film</strong>";
+            word = "Film";
             break;
         case 28:
-            word = "<strong>Vehicles</strong>";
+            word = "Vehicles";
             break;
         case 14:
-            word = "<strong>Television</strong>";
+            word = "Television";
             break;
         case 11:
-            word = "<strong>Books</strong>";
+            word = "Books";
             break;
         case 12:
-            word = "<strong>Music</strong>";
+            word = "Music";
             break;
         case 15:
-            word = "<strong>Video Games</strong>";
+            word = "Video Games";
             break;
         case 17:
-            word = "<strong>Science & Nature</strong>";
+            word = "Science & Nature";
             break;
         default:
             word = "Not Found";
