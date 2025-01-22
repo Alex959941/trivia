@@ -72,7 +72,7 @@ function returnHome(){
         startButton.style.display = "inline-block";
         optionButton.style.display = "inline-block";
         askBox.style.backgroundColor = "gainsboro";
-        installButton.style.display = 'inline-block';
+        //installButton.style.display = 'inline-block';
         console.clear();
     }
 }
@@ -90,7 +90,7 @@ function restart(){
     optionButton.style.display = "inline-block";
     failDiv.style.display = "none";
     askBox.style.backgroundColor = "gainsboro";
-    installButton.style.display = 'inline-block';
+    //installButton.style.display = 'inline-block';
     console.clear();
 }
 
@@ -201,7 +201,7 @@ async function fetchQuestions(){
     optionButton.style.display = "none";
     settingDiv.style.display = "none";
     trivia.style.display = "block";
-    installButton.style.display = 'none';
+    //installButton.style.display = 'none';
 
     apiURL += genre;
     apiURL += difficulty;
