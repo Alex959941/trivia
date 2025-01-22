@@ -166,10 +166,10 @@ function setGenre(category){
             word = "<strong>Television</strong>";
             break;
         case 11:
-            word = "<strong>Books"</strong>;
+            word = "<strong>Books</strong>";
             break;
         case 12:
-            word = "<strong>Music"</strong>;
+            word = "<strong>Music</strong>";
             break;
         case 15:
             word = "<strong>Video Games</strong>";
