@@ -121,7 +121,7 @@ function setDifficulty(measure){
             word = "Not Found";
             break;
     }
-    difDiv.innerHTML = "Your Difficulty: " + word;
+    difDiv.innerHTML = "Your Difficulty: <strong>" + word + "</strong>";
     difficulty = "&difficulty=" + measure;
     console.log(difficulty);
 }
