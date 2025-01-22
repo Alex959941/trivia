@@ -72,6 +72,7 @@ function returnHome(){
         startButton.style.display = "inline-block";
         optionButton.style.display = "inline-block";
         askBox.style.backgroundColor = "gainsboro";
+        installButton.style.display = 'inline-block';
         console.clear();
     }
 }
@@ -89,6 +90,7 @@ function restart(){
     optionButton.style.display = "inline-block";
     failDiv.style.display = "none";
     askBox.style.backgroundColor = "gainsboro";
+    installButton.style.display = 'inline-block';
     console.clear();
 }
 
@@ -131,49 +133,49 @@ function setGenre(category){
 
     switch(category){
         case 21:
-            word = "Sports";
+            word = "<strong>Sports</strong>";
             break;
         case 22:
-            word = "Geography";
+            word = "<strong>Geography</strong>";
             break;
         case 23:
-            word = "History";
+            word = "<strong>History</strong>";
             break;
         case 24:
-            word = "Politics";
+            word = "<strong>Politics<strong>";
             break;
         case 25:
-            word = "Art";
+            word = "<strong>Art</strong>";
             break;
         case 26:
-            word = "Celebrities";
+            word = "<strong>Celebrities</strong>";
             break;
         case 27:
-            word = "Animals";
+            word = "<strong>Animals</strong>";
             break;
         case 9:
-            word = "General Knowledge";
+            word = "<strong>General Knowledge</strong>";
             break;
         case 11:
-            word = "Film";
+            word = "<strong>Film</strong>";
             break;
         case 28:
-            word = "Vehicles";
+            word = "<strong>Vehicles</strong>";
             break;
         case 14:
-            word = "Television";
+            word = "<strong>Television</strong>";
             break;
         case 11:
-            word = "Books";
+            word = "<strong>Books"</strong>;
             break;
         case 12:
-            word = "Music";
+            word = "<strong>Music"</strong>;
             break;
         case 15:
-            word = "Video Games";
+            word = "<strong>Video Games</strong>";
             break;
         case 17:
-            word = "Science & Nature";
+            word = "<strong>Science & Nature</strong>";
             break;
         default:
             word = "Not Found";
@@ -199,10 +201,11 @@ async function fetchQuestions(){
     optionButton.style.display = "none";
     settingDiv.style.display = "none";
     trivia.style.display = "block";
+    installButton.style.display = 'none';
 
     apiURL += genre;
     apiURL += difficulty;
-    console.log(apiURL)
+    console.log(apiURL);
 
     try{
         const response = await fetch(apiURL);
