@@ -11,6 +11,7 @@ let score = 0;
 let parity = 0;
 let correctAnswers = 0;
 
+let installButton;
 let startButton;
 let trivia;
 let askBox;
@@ -50,6 +51,7 @@ window.onload = function(){
     resultScore = document.getElementById("resultScore");
     resultRecap = document.getElementById("resultsRecap");
     failDiv = document.getElementById("fail");
+    installButton = document.getElementById('installButton');
 
     settingDiv.style.display = "none";
     trivia.style.display = "none";
@@ -72,7 +74,7 @@ function returnHome(){
         startButton.style.display = "inline-block";
         optionButton.style.display = "inline-block";
         askBox.style.backgroundColor = "gainsboro";
-        //installButton.style.display = 'inline-block';
+        installButton.style.display = 'inline-block';
         console.clear();
     }
 }
@@ -90,7 +92,7 @@ function restart(){
     optionButton.style.display = "inline-block";
     failDiv.style.display = "none";
     askBox.style.backgroundColor = "gainsboro";
-    //installButton.style.display = 'inline-block';
+    installButton.style.display = 'inline-block';
     console.clear();
 }
 
@@ -201,7 +203,7 @@ async function fetchQuestions(){
     optionButton.style.display = "none";
     settingDiv.style.display = "none";
     trivia.style.display = "block";
-    //installButton.style.display = 'none';
+    installButton.style.display = "none";
 
     apiURL += genre;
     apiURL += difficulty;
@@ -358,7 +360,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
 
-  const installButton = document.getElementById('installButton');
+  installButton = document.getElementById('installButton');
   installButton.style.display = 'inline-block';
 
   installButton.addEventListener('click', () => {
