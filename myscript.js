@@ -51,7 +51,6 @@ window.onload = function(){
     resultScore = document.getElementById("resultScore");
     resultRecap = document.getElementById("resultsRecap");
     failDiv = document.getElementById("fail");
-    installButton = document.getElementById('installButton');
 
     settingDiv.style.display = "none";
     trivia.style.display = "none";
