@@ -28,6 +28,7 @@ font-family: "Outfit", serif;
     text-align: center;
     font-family: "Outfit", serif;
     font-style: normal;
+    border-radius: 10px;
 }
 #difDiv, #genDiv{
     margin: 5px;
@@ -73,6 +74,7 @@ font-family: "Outfit", serif;
     border: blue 2px solid;
     margin: auto;
     padding: 30px
+    border-radius: 20px;
 }
 #askBox{
     text-align: center;
