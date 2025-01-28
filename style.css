@@ -12,12 +12,27 @@ font-family: "Outfit", serif;
     text-align: center;
     margin: 5px;
 }
+#instructions{
+    margin: auto;
+    max-width: 500px;
+    border: blue 2px solid;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+#introP{
+    font-size: 18px;
+}
+#sP{
+    font-size: 20px;
+}
 #difficulty{
     display: grid;
     grid-template-columns: 100%;
     margin-bottom: 20px;
     grid-gap: 3px;
-    
 }
 
 #settingMenu{
