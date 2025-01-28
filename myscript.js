@@ -29,6 +29,8 @@ let resultDiv;
 let resultScore;
 let resultRecap;
 let failDiv;
+let infoButton;
+let info;
 
 let BANNED_WORDS = ["Which", "which", "What", "what", "Why", "why", "When", "when","Who", "who", "is", "known", "for", "The", "the", "In", "in", "and", "are", "On", "on", "an", "An", "used", "Of", "of", "a", "A", "that", "uses", "it", "was", "as", "How", "how", "many", "would", "Would", "you", "by", "last", "have", "to"]
 
@@ -51,13 +53,23 @@ window.onload = function(){
     resultScore = document.getElementById("resultScore");
     resultRecap = document.getElementById("resultsRecap");
     failDiv = document.getElementById("fail");
+    info = document.getElementById("instructions");
+    infoButton = document.getElementById("infoButton");
 
     settingDiv.style.display = "none";
     trivia.style.display = "none";
     resultDiv.style.display = "none";
     failDiv.style.display = "none";
+    info.style.display = "none";
 }
-
+function instructions(){
+    startButton.style.display = "none";
+    optionButton.style.display = "none";
+    settingDiv.style.display = "none";
+    installButton.style.display = "none";
+    infoButton.style.display = "none";
+    info.style.display = "block";
+}
 function returnHome(){
 
     if (confirm("Are you sure?\nYou will lose all progress.") == true){
@@ -74,6 +86,7 @@ function returnHome(){
         optionButton.style.display = "inline-block";
         askBox.style.backgroundColor = "gainsboro";
         installButton.style.display = 'inline-block';
+        infoButton.style.display = "inline-block";
         console.clear();
     }
 }
@@ -89,9 +102,11 @@ function restart(){
     resultDiv.style.display = "none";
     startButton.style.display = "inline-block";
     optionButton.style.display = "inline-block";
+    infoButton.style.display = "inline-block";
     failDiv.style.display = "none";
     askBox.style.backgroundColor = "gainsboro";
     installButton.style.display = 'inline-block';
+    info.style.display = "none";
     console.clear();
 }
 
@@ -203,6 +218,7 @@ async function fetchQuestions(){
     settingDiv.style.display = "none";
     trivia.style.display = "block";
     installButton.style.display = "none";
+    infoButton.style.display = "none";
 
     apiURL += genre;
     apiURL += difficulty;
